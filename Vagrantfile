@@ -87,6 +87,7 @@ systemctl enable --now rke2-server.service
 mkdir -p /home/vagrant/.kube
 cp /etc/rancher/rke2/rke2.yaml /home/vagrant/.kube/config
 sed -i 's/127\.0\.0\.1/192.168.201.21/' /home/vagrant/.kube/config
+sed -i 's/default/rke2/' /home/vagrant/.kube/config
 chown vagrant:vagrant /home/vagrant/.kube/config
 }
 
