@@ -63,4 +63,19 @@ scp -i ~/.vagrant.d/insecure_private_keys/vagrant.key.rsa vagrant@192.168.201.21
 
 # Update user's KubeConfig
 kubecm merge -y /tmp/rke2.yaml
+
+# Check Cilium Status
+cilium status
 ```
+
+# Cilium Examples
+
+## Ingress
+
+[Ingress HTTP Example](https://docs.cilium.io/en/stable/network/servicemesh/http/)
+
+https://www.dbi-services.com/blog/combining-powerful-cilium-features-together-in-kubernetes/
+
+https://dariomader.io/post/how_i_moved_from_metallb_to_cilium/
+
+https://isovalent.com/blog/post/connecting-your-kubernetes-island-to-your-network-with-cilium-bgp/
